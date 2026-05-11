@@ -36,8 +36,8 @@ const generateInterviewReport = async ({ resume, selfDescription, jobDescription
                     Job Description: ${jobDescription}
 
     Important Instructions:
-    - Generate minimum 10 technical questions with detailed answers
-    - Generate minimum 5 behavioral questions with detailed answers
+    - Generate minimum 20 technical questions with detailed answers
+    - Generate minimum 20 behavioral questions with detailed answers
     - Identify at least 5 skill gaps with severity
     - Create a 7 day preparation plan with daily tasks`
 
