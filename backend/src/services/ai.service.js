@@ -105,9 +105,9 @@ const generateResumepdf = async ({ resume, selfDescription, jobDescription }) =>
                         you can highlight the content using some colors or different font styles but the overall design should be simple and professional.
                         The content should be ATS friendly, i.e. it should be easily parsable by ATS systems without losing important information.
                         The resume should not be so lengthy, it should ideally be 1 page long when converted to PDF. Focus on quality rather than quantity and make sure to include all the relevant information that can increase the candidate's chances of getting an interview call for the given job description.
-                        extract the link of the github and linkdin from the resume and also make sure the education is correctly extract from the resume and attach in the new resume for better result and try to generate only one page resume and ATS frindely.
+                        extract the link of the github and linkdin from the resume and also make sure the education is correctly extract from the resume and attach in the new resume also add summary as heading for better result and try to generate only one page resume and ATS frindely.
                         adjust the whole content in the only one page don't leave extra space below remeper it.
-                        Dont leave extra space below the content.
+                        Dont leave extra space below the content. 
                         `
     
     try {
