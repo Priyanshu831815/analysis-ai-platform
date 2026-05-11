@@ -84,17 +84,7 @@ const Home = () => {
         </button>
       </div>
 
-      {/* New Analysis */}
-      <button
-        onClick={() => { setform({jobDescription: "", selfDescription: ""}); setIsSidebarOpen(false); }}
-        className="w-full flex items-center gap-3 px-4 py-3 rounded-xl bg-[#1e293b] hover:bg-[#2d3a4f] transition-all text-sm font-medium text-[#94a3b8] mb-6"
-      >
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"/>
-        </svg>
-        New Analysis
-      </button>
-
+    
       {/* Recent label */}
       <div className="text-[11px] font-bold text-[#475569] uppercase tracking-widest px-2">
         Recent Reports
@@ -193,7 +183,6 @@ const Home = () => {
             <div className="flex items-center gap-2.5 font-extrabold text-[17px] tracking-widest text-[#f8fafc]">
               <div className="w-2 h-2 rounded-full bg-[#3b82f6] md:hidden" />
               <span className="md:hidden font-black">ANALYSIS.AI</span>
-              <span className="hidden md:block text-sm text-[#64748b]">Dashboard</span>
             </div>
           </div>
           <div className="flex items-center gap-3">
