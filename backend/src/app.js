@@ -10,7 +10,7 @@ const cors = require('cors')
 const cookieparser = require('cookie-parser')
 
 app.use(cors({
-    origin:'http://localhost:5173',
+    origin:process.env.NODE_FRONTEND_URL,
     credentials:true
 }))
 
