@@ -4,9 +4,7 @@ import {useAuth} from '../hooks/useAuth'
 
 const Login = () => {
   const {loading , handelLogin,user}= useAuth()
-   if (user) return <Navigate to="/" replace />
-  
-  const navigate = useNavigate()
+   const navigate = useNavigate()
   const [form, setForm] = useState({
     email: "",
     password: ""
@@ -20,7 +18,8 @@ const Login = () => {
       [e.target.name]: e.target.value
     })
   }
-
+     
+  if (user) return <Navigate to="/" replace />
   const handleSubmit = async (e) => {
     e.preventDefault()
     setServerError('')
