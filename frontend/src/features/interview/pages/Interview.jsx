@@ -12,7 +12,7 @@ const Interview = () => {
     if (interviewId) {
       getReportById(interviewId);
     }
-  }, [interviewId, getReportById]);
+  }, [interviewId]);
 
   if (loading || !report) {
     return (
