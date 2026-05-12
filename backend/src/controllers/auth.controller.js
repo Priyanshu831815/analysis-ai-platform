@@ -62,7 +62,7 @@ const token = jwt.sign({
   res.cookie('token',token,{
    httpOnly: true,
          secure:process.env.NODE_SECURE_KEY,
-         sameSite: 'none',
+         sameSite: 'tax',
          maxAge: 24 * 60 * 60 * 1000,
           path: "/"
   })
@@ -124,7 +124,7 @@ const Userlogincontroller = async(req,res) =>{
       res.cookie('token',token,{
          httpOnly: true,
          secure:process.env.NODE_SECURE_KEY,
-         sameSite: 'none',
+         sameSite: 'lax',
          maxAge: 24 * 60 * 60 * 1000,
          path: "/"
       })
@@ -164,7 +164,7 @@ const Userlogoutcontroller = async (req,res) =>{
         res.clearCookie('token',{
           httpOnly: true,
         secure:process.env.NODE_SECURE_KEY,
-         sameSite: 'none',
+         sameSite: 'lax',
          maxAge: 24 * 60 * 60 * 1000,
          path: "/"
         })
